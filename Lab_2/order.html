@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="author" content="Jeet Patel">
+    <title>Document</title>
+    <style>
+      table,th,td{
+        border: 1px solid;
+      }
+      #creditCardInformation,#creditCardInformation td{
+        border: 0px ;
+      }
+      .double{
+        border: 2px double;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="order.html" method="get" id="entrireForm" name = "enterForm">
+      <fieldset name="entireField" id = "container" style="padding-left:0 ;">
+        <h4 style="color: orange">Order Form</h4>
+        <fieldset name="basicInformation" id="basicInfoId">
+          <legend>Basic Information</legend>
+
+          <label for="inputName" >Name:</label>
+          <input id="inputName" type="text" placeholder="Jeet" disabled maxlength="30" name="name">
+          <br >
+          <br >
+          <label for="E-mail">E-mail:</label>
+          <input
+            type="email"
+            id="E-mail"
+            value="Pate1051"
+            name = "email"
+          >
+
+          <br >
+          <br >
+
+          <label for="address">Address</label>
+          <textarea
+            name="myAddress"
+            id="address"
+            cols="25"
+            rows="6"
+            style="vertical-align: middle"
+            
+          ></textarea>
+          <br >
+          <br >
+          <label for="postcode">Postcode</label>
+          <input type="text" maxlength="6" minlength="6" id="postcode" name="enteredPostcode">
+        </fieldset>
+<br>
+        <fieldset name="productInformation" id="productInformationId">
+          <legend>Product Information</legend>
+          <table id="detailedTable" >
+          
+            <tr >
+              <th><b>Product</b></th>
+              <th><b>Part Number</b></th>
+              <th style="width:100px; " ><b>Quantity</b></th>
+              <th><b>Unit Price</b></th>
+              <th  style="width:200px;"><b>Subtotal</b></th>
+            </tr>
+            <tr>
+              <td>Box</td>
+              <td >AC100</td>
+              <td class="double"></td>
+              <td >$5</td>
+              <td class="double"></td>
+            </tr>
+            <tr>
+              <td>Coffee Table</td>
+              <td >AC200</td>
+              <td class="double"></td>
+              <td > $100</td>
+              <td class="double"></td>
+            </tr>
+            <tr>
+              <td>Chair</td>
+              <td >AC300</td>
+              <td class="double"></td>
+              <td >$150</td>
+              <td class="double"></td>
+            </tr>
+            <tr>
+              <td>Desk</td>
+              <td >AC400</td>
+              <td class="double"></td>
+              <td >$120</td>
+              <td class="double"></td>
+            </tr>
+            <tr>
+              <td>Computer Table</td>
+              <td >AC500</td>
+              <td class="double"></td>
+              <td >$130</td>
+              <td class="double"></td>
+            </tr>
+            <tr>
+              <td colspan="4" style="text-align: right">Total:</td>
+              <td class="double"></td>
+            </tr>
+            
+          </table>
+        </fieldset>
+
+<br>
+        
+      <h4> Credit Card Information</h4>
+      <table  id="creditCardInformation">
+        
+        <tr>
+            <td style="text-align: left;">
+               <label >Card Type:</label>
+            </td>
+            <td rowspan="2" style="text-align: left;">
+        
+                <label for="cardNumber"> Card Number:</label>
+                <input type="number" id="cardNumber" >
+       
+            </td>
+        </tr>
+        
+         <tr>
+            <td>
+                <input type="radio" value="Mastercard" id="1" name="card" > Mastercard
+            </td>
+      
+          </tr>
+          <tr>
+            <td>
+                <input type="radio" value="Visa" id="2" name="card" > Visa
+            </td>
+            <td rowspan="2">
+                <label for="expiryDate"> Expiry date:</label>
+                <input type="date" id="expiryDate" name="expiryDateEntered" >
+            </td>
+          </tr>
+        
+          <tr>
+
+            <td>
+               <input type="radio" value="Gift Card" id="3"  name="card" >Gift
+            </td>
+      
+          </tr>
+      </table>
+        <br >
+        <br >
+        <label for="deliveryAddress" style="margin-left: 4px;"> <b> Delivery Address:</b></label>
+        <textarea
+          
+          id="deliveryAddress"
+          cols="25"
+          rows="6"
+          style="vertical-align: middle"
+          name="enteredAddress"
+        ></textarea>
+        <br >
+        <br >
+        <button type="submit" name="sendOrder" id="sendOrderButton" style="margin-left: 2px;">Send order</button>
+        <button type="reset" name="clearForm" id="clearFormButton">Clear form</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
