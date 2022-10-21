@@ -1,0 +1,25 @@
+body{
+    background-color: chartreuse;
+}
+
+table{
+    margin:100px 100px 100px 100px;
+    padding: 100px;
+    border: 100px solid rgb(8, 140, 177);
+
+}
+td{
+
+    color:darkmagenta;
+
+}
+h1{
+display: inline;
+padding: 50px;
+}
+nav{
+    
+    position:relative;
+    background-color: violet;
+    bottom:20% ;
+}
